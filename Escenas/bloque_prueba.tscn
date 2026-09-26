@@ -1,10 +1,18 @@
 [gd_scene format=3 uid="uid://c1c6tyabqjoxg"]
 
-[ext_resource type="Texture2D" uid="uid://5ilmn3oasrxh" path="res://Sprite-0001.png" id="1_be7lo"]
+[ext_resource type="Texture2D" path="res://Sprite-0001.png" id="1_usluj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i7vrv"]
+radius = 32.076874
 
 [node name="Bloque prueba" type="Node" unique_id=1447446306]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2050223315]
-texture = ExtResource("1_be7lo")
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1117133177]
 
-[node name="RigidBody2D" type="RigidBody2D" parent="Sprite2D" unique_id=1117133177]
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=2050223315]
+position = Vector2(631, -1132.0001)
+scale = Vector2(1.865, 1.865)
+texture = ExtResource("1_usluj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=824013417]
+shape = SubResource("CircleShape2D_i7vrv")
