@@ -14,6 +14,7 @@ texture = ExtResource("2_4f3do")
 0:1/0 = 0
 1:1/0 = 0
 2:1/0 = 0
+2:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, -8, 8, 8, 8)
 3:1/0 = 0
 0:2/0 = 0
 1:2/0 = 0
@@ -37,13 +38,10 @@ position = Vector2(466, 239)
 
 [node name="Bordes" parent="." unique_id=1600339404 instance=ExtResource("1_h0ibw")]
 
-[node name="Camera2D" type="Camera2D" parent="Bordes" unique_id=57268792]
-position = Vector2(43, 93)
-zoom = Vector2(2, 2)
-
 [node name="Nivel" type="TileMapLayer" parent="." unique_id=1070866597]
-tile_map_data = PackedByteArray("AAD7/wkAAQAAAAAAAAD8/wkAAQAAAAAAAAD8/wgAAQAAAAAAAAD9/wgAAQAAAAAAAAD9/wkAAQAAAAAAAAD+/wkAAQAAAAAAAAAAAAkAAQAAAAAAAAABAAkAAQAAAAAAAAABAAgAAQAAAAAAAAACAAgAAQAAAAAAAAACAAcAAQAAAAAAAAADAAcAAQACAAEAAAAEAAcAAQAAAAAAAAAGAAYAAQAAAAAAAAAIAAUAAQAAAAAAAAAJAAUAAQACAAEAAAALAAQAAQAAAAAAAAAMAAQAAQAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAD7/wkAAQAAAAAAAAD8/wkAAQAAAAAAAAD8/wgAAQAAAAAAAAD9/wgAAQAAAAAAAAD9/wkAAQAAAAAAAAD+/wkAAQAAAAAAAAABAAgAAQAAAAAAAAACAAcAAQAAAAAAAAADAAcAAQACAAEAAAAEAAcAAQAAAAAAAAAGAAYAAQAAAAAAAAAIAAUAAQAAAAAAAAAJAAUAAQACAAEAAAALAAQAAQAAAAAAAAAMAAQAAQAAAAAAAAA=")
 tile_set = SubResource("TileSet_d5i3i")
 
 [node name="personaje" parent="." unique_id=1412559796 instance=ExtResource("3_jfjvu")]
-position = Vector2(-129, 148)
+position = Vector2(-129, 80)
+scale = Vector2(0.95, 0.95)

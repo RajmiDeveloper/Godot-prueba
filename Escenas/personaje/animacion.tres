@@ -6,6 +6,10 @@
 atlas = ExtResource("1_dlcha")
 region = Rect2(0, 32, 16, 16)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_dlcha"]
+atlas = ExtResource("1_dlcha")
+region = Rect2(32, 16, 16, 16)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_y7tge"]
 atlas = ExtResource("1_dlcha")
 region = Rect2(32, 48, 16, 16)
@@ -22,6 +26,14 @@ animations = [{
 }],
 "loop": 1,
 "name": &"Correr",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dlcha")
+}],
+"loop": 1,
+"name": &"Daño",
 "speed": 5.0
 }, {
 "frames": [{

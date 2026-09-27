@@ -6,12 +6,15 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kbuar"]
 size = Vector2(16, 16)
 
-[node name="personaje" type="CharacterBody2D" unique_id=1412559796]
+[node name="personaje" type="CharacterBody2D" unique_id=1412559796 node_paths=PackedStringArray("animacion")]
+collision_layer = 4
 script = ExtResource("1_g78av")
+animacion = NodePath("Animacion")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1434116653]
+[node name="Animacion" type="AnimatedSprite2D" parent="." unique_id=1434116653]
+unique_name_in_owner = true
 sprite_frames = ExtResource("1_u5lov")
-animation = &"Idle"
+animation = &"Daño"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2103552631]
 shape = SubResource("RectangleShape2D_kbuar")
